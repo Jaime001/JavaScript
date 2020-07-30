@@ -4,19 +4,11 @@ var tijera = "tijera";
 
 function juegoPiedraPapelTijera(humano, maquina) {
   if (humano != maquina) {
-    if (humano === piedra && maquina === papel) {
+    if (humano === piedra && maquina === papel || humano === papel && maquina === tijera || humano === tijera && maquina === piedra) {
       console.log("perdiste");
-    } else if (humano === piedra && maquina  === tijera) {
+    } else if (humano === piedra && maquina  === tijera || humano === papel && maquina === piedra || humano === tijera && maquina  === papel) {
       console.log("Ganaste");
-    } else if (humano === papel && maquina === piedra) {
-      console.log("Ganaste");
-    } else if (humano === papel && maquina === tijera) {
-      console.log("Perdiste");
-    } else if (humano === tijera && maquina === piedra) { 
-      console.log("Perdiste");
-    } else if (humano === tijera && maquina  === papel) {
-      console.log("Ganaste")
-    }
+    } 
   } else {
     console.log("Es un empate")
   }
