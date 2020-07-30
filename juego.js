@@ -12,7 +12,9 @@ function juegoPiedraPapelTijera(humano, maquina) {
   } else {
     console.log("Es un empate")
   }
-}
+};
+
+juegoPiedraPapelTijera(tijera, juegoPiedraPapelTijera);
 
 
 // piedra vs papel = perdiste
